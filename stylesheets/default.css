@@ -1,88 +1,85 @@
-* {
+body {
   font-family: Verdana, sans-serif;
 }
 
+
 header {
-  margin: 1em;
-  text-align: left;
-  color:#00247D;
-}
+  margin-top: -20px;
+  margin-left: -8px;
 
-nav {
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  margin:1%;
-  padding: 0.13em;
-  border-color: orange;
-  height: 20px;
-  width:98%;
-  background-color:#110000;
-}
-
-nav a {
-  background-color: #110000;
-  text-decoration: none;
-}
-
-nav a:link {
-  color: white;
-}
-
-nav a:visited {
-  color: #c6cbcc;
-}
-
-p {
-  display: inline-block;
-  font-size: 0.85em;
-  margin-right: 40%;
-  margin-left: 4%;
-  text-align: left;
-  float: left;
-}
-
-.profile {
-  position: absolute;
-  top:25%;
-  left: 68%;
-  display: inline-block;
-  border-radius: 75px;
-  border-style: solid;
-  border-width: 1px;
-  border-color:orange;
-
-}
-
-section div {
-  padding-top: 50px;
-  height:1px;
+  position: fixed;
+  height: 5em;
   width: 100%;
-  color: blue;
-  clear: both;
+  background-color:black;
+  vertical-align: center;
+  z-index: 100;
 }
-
-section table {
+.main {
   position: relative;
-  width:96%;
-  top:65%;
-  margin-left:1.5%;
-  margin-right:2%;
-  border-style: solid;
-  border-width: 4px;
-  border-color: orange;
-  background-color: black;
+  top: 10%;
+  left: 5px;
+  font-size: 3em;
   color: white;
+  clear: left;
+  font-family: fantasy;
 }
 
-.caption {
-  font-weight: lighter;
-  font-size:0.8em;
-
+header a {
+  text-decoration: none;
+  color:silver;
 }
 
+header a:hover {
+  color: orange;
+}
+
+section {
+  z-index: 99;
+}
+section h2 {
+  position: relative;
+  top: 5em;
+  font-size: 1.5em;
+  font-family: fantasy;
+  text-align: center;
+}
+section div {
+  position: relative;
+  height: 0.2em;
+  width: 10%;
+  left: 45%;
+  top: 8em;
+  border-radius: 50%;
+  background-color: black;
+}
+section p {
+  position: relative;
+  font-size: 0.85em;
+  text-align: center;
+  font-family: fantasy;
+  width: 60%;
+  clear: both;
+  top: 10em;
+  left: 20%;
+}
+
+.sublime {
+  position: relative;
+  width: 105%;
+  margin-left: -8px;
+  top: 6em;
+}
+.journey {
+  position: relative;
+  width: 105%;
+  margin-left: -8px;
+  top: 30em;
+}
 footer a {
+  position: relative;
   font-size: 0.5em;
+  top: 100em;
+  margin-bottom: 2%;
 }
 
 ul {
