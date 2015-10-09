@@ -75,6 +75,22 @@ section p {
   margin-left: -8px;
   top: 30em;
 }
+.atsai {
+  position: relative;
+  width: 105%;
+  margin-left: -8px;
+  top: 16em;
+}
+.icon {
+  position: relative;
+  top: 10em;
+  width: 75px;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 25%;
+}
+
 footer a {
   position: relative;
   font-size: 0.5em;
