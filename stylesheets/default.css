@@ -1,3 +1,25 @@
+/*
+Atomic CSS approach
+*/
+
+.img-center {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%; }
+
+
+
+
+
+
+
+
+
+
+/*
+Traditional CSS approach
+*/
+
 body {
   font-family: Verdana, sans-serif;
 }
@@ -65,6 +87,7 @@ section p {
 
 .sublime {
   position: relative;
+  max-width: 1000px;
   width: 105%;
   margin-left: -8px;
   top: 6em;
@@ -77,6 +100,7 @@ section p {
 }
 .atsai {
   position: relative;
+  max-width: 1000px;
   width: 105%;
   margin-left: -8px;
   top: 16em;
