@@ -56,9 +56,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .debug {
-    border: 0px solid red;
+    border: 1px solid red;
 }
-
+.header-ht-medium {height: 5em;}
 .p-xxl {padding: 10em;}
 .p-std {padding: 6em;}
 .p-sm {padding: 4em;}
@@ -82,6 +82,16 @@ textarea {
 
 .list-basic {list-style-type: none;}
 
+header a:link {
+top-margin: 50%;
+  color: white;
+}
+header a:hover {
+  color: orange;
+}
+header a:visited {
+  color: white;
+}
 
 
 
