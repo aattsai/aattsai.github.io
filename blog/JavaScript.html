@@ -26,7 +26,36 @@
 
       <p>After 4 weeks of intensive Ruby challenges, this week we are finally diving into the world of JavaScript. Programmers I speak to often have mixed feelings about JavaScript. I often hear high praises about the language, but other times, I hear people expressing clear feeling of frustration towards it. One of the very first things I learned this week was that JavaScript, unlike its name may suggest, has essentially no connection with Java. However, after a few hours of JavaScript, I actually feel there are some resemblances between JavaScript and Java, perhaps just from a purely syntactic perspective.</p>
 
-      <p>Back to the topic of this blog post. This week I would like to discuss one of the more distinctive difference between Ruby and JavaScript: Hashes in Ruby and Objects in JavaScript. </p>
+      <p>Back to the topic of this blog post. This week I would like to discuss one of the key topics in the JavaScript language: objects. In JavaScript, object groups together a set of variables and functions and store that information within its umbrella. It is comparable to Hashes in Ruby. Similar to Hashes, objects can be defined by using curly braces and stored in a variable. Within the curly braces, variables are stored called properties, which are represented by keys that correspond to values. An object cannot have two keys with the same name. Interestingly, a function can also be stored as a value in an object. When a function is stored within an object, it is called a method. </p>
+
+      <p>There are two common ways to create an object in JavaScript. The first and easiest way is called literal notation:<br>
+
+      <code><br>var car = {<br>
+        &nbsp&nbsp&nbspbrand: "bmw",<br>
+        &nbsp&nbsp&nbspdoors: 4,<br>
+        &nbsp&nbsp&nbsphorsepower: 300<br>
+      };</code>
+      <p>In this example, an object variable called car is defined and stored with 3 properties. Brand, doors, and horsepower are the keys of the properties each with a corresponding value. To access properties, the easiest way is to use the dot notation. For example, if I want to know the number of doors in this object car. I can do car.doors to access the value 4 in this case.</P>
+
+      <p>The second way to create an object in JavaScript is by using a constructor notation: <br></p>
+
+      <code><br>var car = new Object();<br>
+        &nbsp&nbsp&nbspcar.brand = "bmw";<br>
+        &nbsp&nbsp&nbspcar.doors = 4;<br>
+        &nbsp&nbsp&nbspcar.horsepower = 300;</code>
+
+      <p>In this example, I used the keyword new and the object constructor to first create an empty object called car. Then each of the properties are added separately by calling the object car and the keys with assigned value. Note that this will result in an identical object as the one above created by literal notation.</p>
+
+      <p>A more complicated but very useful way to create an object by constructor notation is by using a function as template: <br></p>
+      <code><br>function Car(brand, doors, horsepower) {<br>
+        &nbsp&nbsp&nbspthis.brand = brand;<br>
+        &nbsp&nbsp&nbspthis.doors = doors;<br>
+        &nbsp&nbsp&nbspthis.horsepower = horsepower;<br>
+      };</code>
+      <p>In this example, a function template is used to create an object that accepts three arguments, which represent the keys of each properties. The keyword this is used to indicate that the property belongs to the object that this function creates. Using a function template to create object allows one to create multiple instances of the object by calling the constructor function after the keyword new. It is especially useful when one wishes to create several objects to represent similar things.</p>
+      <br>
+
+
 
 
      </section>
