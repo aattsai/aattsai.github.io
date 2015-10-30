@@ -58,14 +58,29 @@ textarea {
 .debug {
     border: 1px solid red;
 }
+.bgc-techimg {background-image: url("../imgs/technology1.jpg"); background-repeat: no-repeat;
+    background-attachment: fixed;}
+.block {display: block;}
+.inline-block {display: inline-block;}
+.fixed_pos { position: fixed;}
+.absolute_pos {position: absolute;}
+.relative_pos {position: relative;}
 .header-ht-medium {height: 5em;}
 .p-xxl {padding: 10em;}
 .p-std {padding: 6em;}
 .p-sm {padding: 4em;}
+.p-xs {padding: 2em;}
 
+.width-full {width: 100%;}
+
+.top-m {top: 75px;}
+.z-index-top: {100;}
+.z-index-middle: {99;}
+.z-index-bottom: {-1;}
 .bgc-cool {background-color: #152C55;}
 .bgc-black {background-color: black;}
 .bgc-bright {background-color: orange;}
+.bgc-pale {background-color: white;}
 
 .txtc-pale {color: white;}
 
