@@ -60,6 +60,8 @@ textarea {
 }
 .bgc-techimg {background-image: url("../imgs/technology1.jpg"); background-repeat: no-repeat;
     background-attachment: fixed;}
+.bgc-nyc {background-image: url("../imgs/new-york-city.jpg");
+    background-attachment: fixed;};
 .block {display: block;}
 .inline-block {display: inline-block;}
 .fixed_pos { position: fixed;}
