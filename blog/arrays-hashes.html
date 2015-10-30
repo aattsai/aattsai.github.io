@@ -1,34 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
-  <title>Blog IronSight</title>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="../index.html">About</a>
-    <a href="git.html">Post 1</a>
+      <link rel="stylesheet" href="../stylesheets/normalize.min.css">
+      <link rel="stylesheet" href="../stylesheets/trg.css">
+      <link rel="stylesheet" href="../stylesheets/main.css">
 
+      <!--[if lt IE 9]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
+  </head>
+  <body class = "bgc-comp">
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="debug">
+        <header class="debug width-full row gutters-t gutters-d txtc-pale bgc-black header-ht-medium fixed_pos z-index-top txt-center">
+          <nav>
+            <a href="../index.html">About</a>
+            <a href="git.html">Post 1</a>
+            <a href="css-concepts.html">Post 2</a>
+            <a href="arrays-hashes.html">Post 3</a>
+            <a href="enumerable-methods.html">Post 4</a>
+            <a href="ruby-classes.html">Post 5</a>
+            <a href="JavaScript.html">Post 6</a>
   </nav>
-  <header>
-    <h1>Blog IronSight</h1>
-    <img src="imgs/cupertino.jpg" alt="image" />
-  </header>
-  <section>
-    <h3>Introduction to Arrays and Hashes</h3>
-    <p>This is week 4 at Dev Bootcamp and we are finally learning (or re-learning) Ruby! We were assigned with many challenges this week, but fortunately because most (all) of us have prior exposure to Ruby, the challenges were relatively easy. In this week's blog I would like to introduce the concepts of array and hash. Array and hash are containers that collect objects, which can be anything from integers, strings, other arrays, hashes, classes, true and false. The difference between array and hash is that an array stores objects in a sequential order. Whereas hash stores objects in paris, each pair consisting of a key and a value. And one gets to use the key to retrieve the value. It is important to note that in Ruby, hash keys are unique per hash and that there is only one key/value pair for any given key.</p>
+        </header>
+      </div>
+      <div class="debug p-sm txtc-pale fz-xxl txt-center top-m z-index-bottom bgc-swiss">
+      </div>
 
-    <p>In other words, an array is a hash where the keys happen to be consecutive integers that starts with 0. To create an array, there are two ways I'd like to introduce here, the first is by using the Array.new method, which lets you specify the size of the array and initialize its contents. The second, and more convenient way to introduce an array is by using the literal array constructor arr = []. To emphasize, each item in an array takes a numbered position. The first position is position zero.</p>
+      <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
+        <section>
+          <h3>Introduction to Arrays and Hashes</h3>
+          <p>This is week 4 at Dev Bootcamp and we are finally learning (or re-learning) Ruby! We were assigned with many challenges this week, but fortunately because most (all) of us have prior exposure to Ruby, the challenges were relatively easy. In this week's blog I would like to introduce the concepts of array and hash. Array and hash are containers that collect objects, which can be anything from integers, strings, other arrays, hashes, classes, true and false. The difference between array and hash is that an array stores objects in a sequential order. Whereas hash stores objects in paris, each pair consisting of a key and a value. And one gets to use the key to retrieve the value. It is important to note that in Ruby, hash keys are unique per hash and that there is only one key/value pair for any given key.</p>
 
-    <p>Hash differs from array mostly because objects are not contained in sequentially ordered list. Instead, objects are each assigned to a unique key that can be called to retrieve the value stored. To create a hash, one can use the traditional new constructor: Hash.new, which creates an empty hash. a more convenient way to create a hash is by using the curly braces. For example, one can create a hash by simply
-      writing my_hash = {:key1 => "value", :key2 => "value2"}.</p>
-    </section>
+          <p>In other words, an array is a hash where the keys happen to be consecutive integers that starts with 0. To create an array, there are two ways I'd like to introduce here, the first is by using the Array.new method, which lets you specify the size of the array and initialize its contents. The second, and more convenient way to introduce an array is by using the literal array constructor arr = []. To emphasize, each item in an array takes a numbered position. The first position is position zero.</p>
 
-    <footer>
-    <p>(c) 2015 Blog IronSight</p>
-  </footer>
+          <p>Hash differs from array mostly because objects are not contained in sequentially ordered list. Instead, objects are each assigned to a unique key that can be called to retrieve the value stored. To create a hash, one can use the traditional new constructor: Hash.new, which creates an empty hash. a more convenient way to create a hash is by using the curly braces. For example, one can create a hash by simply
+          writing my_hash = {:key1 => "value", :key2 => "value2"}.</p>
+        </section>
+      </main>
+
+      <footer>
+  <p>(c) 2015 Blog IronSight</p>
+</footer>
+
+
   </body>
-  </html>
+</html>
+
+
+

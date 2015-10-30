@@ -1,61 +1,92 @@
 <!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-<head>
+      <link rel="stylesheet" href="../stylesheets/normalize.min.css">
+      <link rel="stylesheet" href="../stylesheets/trg.css">
+      <link rel="stylesheet" href="../stylesheets/main.css">
 
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
-  <title>Blog IronSight</title>
-</head>
-
-<body>
-  <nav>
-    <a href="../index.html">About</a>
-    <a href="git.html">Post 1</a>
-    <a href="css-concepts.html">Post 2</a>
-    <a href="arrays-hashes.html">Post 3</a>
-    <a href="enumerable-methods.html">Post 4</a>
-    <a href="ruby-class.html">Post 5</a>
-    <a href="JavaScript vs. Ruby">Post 6</a>
+      <!--[if lt IE 9]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
+  </head>
+  <body class = "bgc-comp">
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="debug">
+        <header class="debug width-full row gutters-t gutters-d txtc-pale bgc-black header-ht-medium fixed_pos z-index-top txt-center">
+          <nav>
+            <a href="../index.html">About</a>
+            <a href="git.html">Post 1</a>
+            <a href="css-concepts.html">Post 2</a>
+            <a href="arrays-hashes.html">Post 3</a>
+            <a href="enumerable-methods.html">Post 4</a>
+            <a href="ruby-classes.html">Post 5</a>
+            <a href="JavaScript.html">Post 6</a>
   </nav>
-  <header>
-    <h1>Blog IronSight</h1>
-    <img src="imgs/cupertino.jpg" alt="image" />
-  </header>
-  <main>
-    <section>
-      <h3>Introduction to Git and GitHub</h3>
-      <p>Before I started coding, I've always wondered what sets developers and recreational computer users apart. After all, almost all people today use computers excessively, not just developers. A shallow, but legimate observation is how much developers rely the Command Line to navigate around files while typical computer users rely on the graphical interface created by professional programmers...</p>
-      <a href="git.html">Continue reading</a>
+        </header>
+      </div>
+      <div class="debug p-sm txtc-pale fz-xxl txt-center top-m z-index-bottom bgc-swiss">
+      </div>
 
-    </section>
-    <secion>
-      <h3>CSS Concepts - Border, Margin, and Padding</h3>
-      <p>Time flies, this is already the end of week three for our phase 0 portion at Dev Bootcamp. It also means I have officially moved to New York City for three weeks as of tomorrow. What an amazing three weeks it has been! After two weeks of attempting to master the basic concepts behind html and css, I would like to write up a little bit of what I've learned about basic CSS concepts.</p>
-      <a href="css-concepts.html">Continue reading</a>
-    </section>
-    <section>
-      <h3>Introduction to Array and Hash</h3>
-      <p>This is week 4 at Dev Bootcamp and we are finally learning (or re-learning) Ruby! We were assigned with many challenges this week, but fortunately because most (all) of us have prior exposure to Ruby, the challenges were relatively easy. In this week's blog I would like to introduce the concepts of array and hash. </p>
-      <a href="arrays-hashes.html">Continue reading</a>
+      <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
+        <section>
+          <h3>Introduction to Git and GitHub</h3>
+          <p>Before I started coding, I've always wondered what sets developers and recreational computer users apart. After all, almost all people today use computers excessively, not just developers. A shallow, but legimate observation is how much developers rely the Command Line to navigate around files while typical computer users rely on the graphical interface created by professional programmers...</p>
+          <a href="git.html">Continue reading</a>
+        </section>
 
-      <h3>Enumerable Methods - .map</h3>
-      <p>This week has been a pretty intense week for me. We started inplementing Ruby methods into our codes. These methods are such powerful tools that, if implemented correctly, they can solve a relatively complex problem with merely one line of code. That's probably one of the reasons that Ruby is a programming language praised by so many developers.</p>
-      <a href="enumerable-methods.html">Continue reading</a>
+        <secion>
+          <h3>CSS Concepts - Border, Margin, and Padding</h3>
+          <p>Time flies, this is already the end of week three for our phase 0 portion at Dev Bootcamp. It also means I have officially moved to New York City for three weeks as of tomorrow. What an amazing three weeks it has been! After two weeks of attempting to master the basic concepts behind html and css, I would like to write up a little bit of what I've learned about basic CSS concepts.</p>
+          <a href="css-concepts.html">Continue reading</a>
+        </section>
 
-      <h3>Ruby Classes</h3>
-      <p>As a Ruby beginner, you must hear the phrase "Ruby is an object-oriented language" way too often. In object-oriented langauge such as Ruby, a class is the blueprint from which objects are created. A class can define the characteristics of an object, or it can define a combination of functions to an object. For example Countries is a class, and the United States is an instance of the class of objects known as Countries. Within the class Countries, various characteristics can be defined, such as population, political system, economic system and so on based.</p>
-      <a href="ruby-classes.html">Continue reading</a>
+        <section>
+          <h3>Introduction to Array and Hash</h3>
+          <p>This is week 4 at Dev Bootcamp and we are finally learning (or re-learning) Ruby! We were assigned with many challenges this week, but fortunately because most (all) of us have prior exposure to Ruby, the challenges were relatively easy. In this week's blog I would like to introduce the concepts of array and hash. </p>
+          <a href="arrays-hashes.html">Continue reading</a>
+        </section>
 
-      <h3>JavaScript vs. Ruby - Hashes and Objects</h3>
-      <p>After 4 weeks of intensive Ruby challenges, this week we are finally diving into the world of JavaScript. Programmers I speak to often have mixed feelings about JavaScript. I often hear high praises about the language, but other times, I hear people expressing clear feeling of frustration towards it. One of the very first things I learned this week was that JavaScript, unlike its name may suggest, has essentially no connection with Java. However, after a few hours of JavaScript, I actually feel there are some resemblances between JavaScript and Java, perhaps just from a purely syntactic perspective.</p>
-      <a href="JavaScript.html">Continue reading</a>
+        <section>
+          <h3>Enumerable Methods - .map</h3>
+          <p>This week has been a pretty intense week for me. We started inplementing Ruby methods into our codes. These methods are such powerful tools that, if implemented correctly, they can solve a relatively complex problem with merely one line of code. That's probably one of the reasons that Ruby is a programming language praised by so many developers.</p>
+          <a href="enumerable-methods.html">Continue reading</a>
+        </section>
 
-  </main>
+        <section>
+          <h3>Ruby Classes</h3>
+          <p>As a Ruby beginner, you must hear the phrase "Ruby is an object-oriented language" way too often. In object-oriented langauge such as Ruby, a class is the blueprint from which objects are created. A class can define the characteristics of an object, or it can define a combination of functions to an object. For example Countries is a class, and the United States is an instance of the class of objects known as Countries. Within the class Countries, various characteristics can be defined, such as population, political system, economic system and so on based.</p>
+          <a href="ruby-classes.html">Continue reading</a>
+        </section>
 
-  <footer>
-    <p>(c) 2015 Blog IronSight</p>
-  </footer>
+        <section>
+          <h3>JavaScript vs. Ruby - Hashes and Objects</h3>
+          <p>After 4 weeks of intensive Ruby challenges, this week we are finally diving into the world of JavaScript. Programmers I speak to often have mixed feelings about JavaScript. I often hear high praises about the language, but other times, I hear people expressing clear feeling of frustration towards it. One of the very first things I learned this week was that JavaScript, unlike its name may suggest, has essentially no connection with Java. However, after a few hours of JavaScript, I actually feel there are some resemblances between JavaScript and Java, perhaps just from a purely syntactic perspective.</p>
+          <a href="JavaScript.html">Continue reading</a>
+        </section>
+      </main>
 
-</body>
+      <footer>
+  <p>(c) 2015 Blog IronSight</p>
+</footer>
 
+
+
+
+
+
+
+
+
+  </body>
 </html>
+
+
