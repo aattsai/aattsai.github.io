@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="../stylesheets/trg.css">
+        <link rel="stylesheet" href="../stylesheets/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body class = "bgc-techimg">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="debug">
+          <header class="debug width-full row gutters-t gutters-d txtc-pale bgc-black header-ht-medium fixed_pos z-index-top">
+          </header>
+        </div>
+        <div class="debug bgc-cool p-sm txtc-pale fz-xxl txt-center top-m z-index-bottom">
+        </div>
+
+        <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
+            <section>
+                <h1>JavaScript</h1>
+                <h3>I. Sample JavaScript Code Refresher -</h3>
+                <img src = "../imgs/js_example.png" alt= "js_example" width: "450" />
+                <br><br><br>
+                <h3>II. JavaScript Objects</h3>
+                <p class = "ftwt-bold">Literal Notation:</p>
+                <code>var object_example = { <br>
+                    &nbsp&nbsp&nbspproperty_key1: "value1",<br>
+                    &nbsp&nbsp&nbspproperty_key2: "value2",<br>
+                    &nbsp&nbsp&nbspproperty_key3: "value3"<br>
+                };<br>
+                </code>
+                <p class = "ftwt-bold">Constructor Notation</p>
+                <code>var object = new Object();<br>
+                    object.property_key1 = "value1";<br>
+                    object.property_key2 = "value2";<br>
+                    object.property_key3 = "value3";<br>
+                </code>
+
+                <p class = "ftwt-bold">Update an Object</p>
+                <code>
+                    object.proper_key1 = "new_value1";<br>
+                    object['proper_key1'] = "new_value1";
+                </code>
+                <p>*Bracket notation is more expressive than dot notation because it allows a variable to specify all or part of the property name. This is possible because the JavaScript interpreter automatically converts the expression within the square brackets to a string, and then retrieves the corresponding property.</p>
+
+                <p class = "ftwt-bold">Create Multiple Instances of an Object</p>
+                <code>
+                    function Car(brand, color) {<br>
+                        &nbsp&nbsp&nbspthis.brand_name = brand;<br>
+                        &nbsp&nbsp&nbspthis.car_color = color;<br>
+                    };<br>
+                    var myCar = new Car("Saab", "black");<br>
+                    var herCar = new Car("Mercedes", "silver");<br>
+                </code>
+                <br><br><br>
+                <h3>III. Array & Object Iteration</h3>
+                <p class = "ftwt-bold">Iteration Array & Obejct Using For Loops</p>
+                <code>
+                    for (var i = 0 ; i < array.length ; i++) {<br>
+                        &nbsp&nbsp&nbsparray[i] += 2; <br>
+                    };<br><br>
+
+                    for (var property_key in object) {<br>
+                        &nbsp&nbsp&nbspobject.property_key = "new value";<br>
+                    };<br>
+                </code>
+                <p class = "ftwt-bold">Access Nested Objects</p>
+                <code>
+                    for (var property_key in Outer_Object) {<br>
+                        &nbsp&nbsp&nbspfor (var property_key2 in Outer_Object[property_key]) {<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspOuter_Object[property_key][property_key2] += 1;<br>
+                        &nbsp&nbsp&nbsp}<br>
+                    }<br><br><br><br>
+                </code>
+            </section>
+            <section>
+                <h1>Ruby</h1>
+                <h3>I. Sample Ruby Code Refresher -</h3>
+
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
