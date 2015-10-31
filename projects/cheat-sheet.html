@@ -31,7 +31,26 @@
             <section>
                 <h1>JavaScript</h1>
                 <h3>I. Sample JavaScript Code Refresher -</h3>
-                <img src = "../imgs/js_example.png" alt= "js_example" width: "450" />
+                <!-- <img src = "../imgs/js_example.png" alt= "js_example" width: "450" /> -->
+                <code>
+                    var integer = 5;<br>
+                    var array_example = [];<br>
+                    var object_example = {<br>
+                        &nbsp&nbsp&nbspproperty_key1: value1,<br>
+                        &nbsp&nbsp&nbspproperty_key2: value2,<br>
+                        &nbsp&nbsp&nbspproperty_key3: value3<br>
+                    };<br><br>
+
+                    var functionExample = new Function(argument, parameter) {<br>
+                        &nbsp&nbsp&nbspif (argument === 5) {<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log("Prints " + arugment);<br>
+                        &nbsp&nbsp&nbsp}<br>
+                        &nbsp&nbsp&nbspelse if (argument === 4) {<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log("Prints " + parameter);<br>
+                        &nbsp&nbsp&nbsp};<br>
+                    };<br>
+                    functionExample(5, "Calls the function");
+                </code>
                 <br><br><br>
                 <h3>II. JavaScript Objects</h3>
                 <p class = "ftwt-bold">Literal Notation:</p>
@@ -88,7 +107,27 @@
             <section>
                 <h1>Ruby</h1>
                 <h3>I. Sample Ruby Code Refresher -</h3>
+                <code>
+                    class GuessingGame<br>
+                        &nbsp&nbsp&nbspdef initialize(answer)<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@answer = answer<br>
+                        &nbsp&nbsp&nbspend<br><br>
 
+                        &nbsp&nbsp&nbspdef guess (guess)<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspif @answer > guess<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@solve = :low<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspelsif @answer == guess<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@solve = :correct<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspelsif @answer < guess<br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@solve = :high<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspend<br>
+                        &nbsp&nbsp&nbspend<br><br>
+
+                        &nbsp&nbsp&nbspdef solved?<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@solve == :correct ? true : false<br>
+                        &nbsp&nbsp&nbspend<br>
+                    end<br><br>
+                </code>
             </section>
 
         </main>

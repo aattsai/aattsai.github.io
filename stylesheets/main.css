@@ -56,13 +56,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .debug {
-    border: 1px solid red;
+    border: 0px solid red;
 }
-.bgc-techimg {background-image: url("../imgs/technology1.jpg"); background-repeat: no-repeat;
-    background-attachment: fixed;}
+.bgc-techimg {background-image: url("../imgs/bg3.jpg"); background-repeat: no-repeat;
+    background-attachment: fixed; }
 .bgc-comp {background-image: url("../imgs/computer.jpg"); background-repeat: no-repeat;
     background-attachment: fixed;}
-.bgc-nyc {background-image: url("../imgs/new-york-city.jpg");
+.bgc-nyc {background-image: url("../imgs/new-york-city2.jpg");
     background-attachment: fixed;}
 .bgc-swiss {background-image: url("../imgs/journey.jpg");
     background-attachment: fixed; background-repeat: no-repeat;}
