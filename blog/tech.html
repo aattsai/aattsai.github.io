@@ -38,7 +38,25 @@
 
       <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
         <section>
+          <h3>Recursion</h3>
+          <p>We have covered a wide array of concepts in the past eight weeks of phase 0. There is, however, a couple of interesting topics we have yet to cover. This week, I plan to introduce the concept of recursion, as it is one of the topics I have always wanted to implement to some of my prior programs. The concept of recursion is simple, a function that calls itself within the function to get the job done. Recursion offers an additional way to define an infinite set of numbers other than iterative methods such as loops.</p>
+          <code>
+            function factorial(num) {<br>
+              &nbsp&nbsp&nbspif (num < 0) {<br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn -1;<br>
+              &nbsp&nbsp&nbsp}<br>
+              &nbsp&nbsp&nbspelse if (num === 0) {<br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn 1;<br>
+              &nbsp&nbsp&nbsp}<br>
+              &nbsp&nbsp&nbspelse {<br>
+                <span class = "txtc-bright">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn (num * factorial(num - 1));</span><br>
+              &nbsp&nbsp&nbsp}<br>
+            }<br>
 
+          </code>
+          <p>The code above illustrates a classic implementation of recursion. To calculate the factorial of a positive integer, one needs to add up all the positive integer between the assigned number and 0. In order to repeat the process of addition, this program has a function which calls itself within the function before a specific condition is fulfilled, or in this case, before the number gets reduced to zero. Recursion allows programmer to define an infinite set of objects by a finite statement.
+
+          </p>
         </section>
       </main>
 

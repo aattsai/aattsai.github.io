@@ -64,7 +64,7 @@ textarea {
     background-attachment: fixed;}
 .bgc-nyc {background-image: url("../imgs/new-york-city2.jpg");
     background-attachment: fixed;}
-.bgc-swiss {background-image: url("../imgs/journey.jpg");
+.bgc-swiss {background-image: url("../imgs/nyc.jpg");
     background-attachment: fixed; background-repeat: no-repeat;}
 .block {display: block;}
 .inline-block {display: inline-block;}
@@ -89,6 +89,7 @@ textarea {
 .bgc-pale {background-color: white;}
 
 .txtc-pale {color: white;}
+.txtc-bright {color: red;}
 
 .txt-center {text-align: center;}
 
