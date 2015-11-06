@@ -2,29 +2,42 @@
 
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/>
+    <!-- <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/> -->
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script src="semantic/dist/semantic.min.js"></script>
     <title>IronSight Homepage</title>
   </head>
 
   <body>
-    <header>
-        <a href="about.html" class="main">Aaron Tsai&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="projects/index.html">PROJECTS&nbsp;&nbsp;&nbsp;</a>
-        <a href="#">TRAVELS&nbsp;&nbsp;&nbsp;</a>
-        <a href="blog/index.html">BLOG&nbsp;&nbsp;&nbsp;</a>
-        <a href="contact.html">CONTACT&nbsp;&nbsp;&nbsp;</a>
+    <nav class ="ui menu">
+        <a href="about.html" class="header item">Aaron Tsai&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="projects/index.html" class ="item ui">PROJECTS&nbsp;&nbsp;&nbsp;</a>
+        <a href="#" class ="item">TRAVELS&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog/index.html" class ="item">BLOG&nbsp;&nbsp;&nbsp;</a>
+        <a href="contact.html" class ="item">CONTACT&nbsp;&nbsp;&nbsp;</a>
         <br><br>
-    </header>
+    </nav>
 
-    <section>
-      <h2>NYC Bar Encounter #1</h2>
-      <div></div>
-      <p>I met this 48yo Colombian man who was celebrating the completion of his 12-step at ca. He showed me his artwork, and I was stunned by the abstraction and how unsettling it made me feel.
+    <section class ="ui two column grid">
+
+      <div class = "ui column message">
+      <div class ="ui horizontal divider"><i class ="cocktail icon"></i></div>
+        <p>I met this 48yo Colombian man who was celebrating the completion of his 12-step at ca. He showed me his artwork, and I was stunned by the abstraction and how unsettling it made me feel.
       </p>
       <p>He asked me to comment, I told him that it makes me feel disturbed. He slammed on the bar counter and laughed "so I am an artist after all. You see, its not about the bullshit answer like 'oh yeah its good' or trying to analyze it, you can't analyze art. Its about the reaction, you felt disturbed by my art, it moved you on the inside, I moved you, a stranger just touched your world."
       </p>
       <p>When asked about his decision to not sell his artworks, he said "I tried once at a bar in Astoria 13 years ago. I asked every buyer why they wanted my painting. One couple said the color really goes with our couch. I raged and told them to get the f*** outta here, my pain and suffering goes with your couch? I returned all the proceeds to the bar owner and asked her to comp drinks that night until everyone gets wasted, then use the rest to get me breakfast." He left this self-portrait on a receipt before leaving the bar.
       </p>
+      </div>
+      <div class = "ui column">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
     </section>
     <section>
       <br><br><br><br><br>
@@ -35,13 +48,13 @@
 
     <footer>
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Design Project</a></li>
-        <li><a href="#">Publication</a></li>
-        <li><a href="#">Travels</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="https://www.linkedin.com/aattsai">Linkedin</a></li>
+        <li class= "ui button"><a href="#">About Me</a></li>
+        <li class= "ui button"><a href="#">Design Project</a></li>
+        <li class= "ui button"> <a href="#">Publication</a></li>
+        <li class= "ui button"><a href="#">Travels</a></li>
+        <li class= "ui button"><a href="blog/index.html">blog</a></li>
+        <li class= "ui button"><a href="mailto:aattsai@gmail.com"><i class ="ui icon mail"></i></a></li>
+        <li class= "ui button"><a href="https://www.linkedin.com/in/aattsai"><i class="ui icon linkedin"></i></a></li>
       </ul>
       <p></p>
     </footer>
