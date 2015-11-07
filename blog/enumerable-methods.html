@@ -1,60 +1,87 @@
 <!doctype html>
-<html class="no-js" lang="">
+
+<html>
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title></title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <link rel="stylesheet" href="../stylesheets/normalize.min.css">
-      <link rel="stylesheet" href="../stylesheets/trg.css">
-      <link rel="stylesheet" href="../stylesheets/main.css">
-
-      <!--[if lt IE 9]>
-          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-          <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-      <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css"/>
+    <script src="../semantic/dist/semantic.min.js"></script>
+    <title>Blog IronSight</title>
   </head>
-  <body class = "bgc-comp">
-      <!--[if lt IE 8]>
-          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-      <div class="debug">
-        <header class="debug width-full row gutters-t gutters-d txtc-pale bgc-black header-ht-medium fixed_pos z-index-top txt-center">
-          <nav>
-            <a href="../index.html">About</a>
-            <a href="git.html">Post 1</a>
-            <a href="css-concepts.html">Post 2</a>
-            <a href="arrays-hashes.html">Post 3</a>
-            <a href="enumerable-methods.html">Post 4</a>
-            <a href="ruby-classes.html">Post 5</a>
-            <a href="JavaScript.html">Post 6</a>
-  </nav>
-        </header>
-      </div>
-      <div class="debug p-sm txtc-pale fz-xxl txt-center top-m z-index-bottom bgc-swiss">
-      </div>
 
-      <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
-        <section>
+  <body>
+    <nav class ="ui top fixed inverted menu">
+      <span class="header item">Aaron Tsai</span>
+      <a href="../index.html" class ="item">HOME</a>
+      <a href="../projects/index.html" class ="item ui">PROJECTS</a>
+      <a href="#" class ="item">TRAVELS</a>
+
+      <div class="right menu">
+        <div class="item">
+          <div class="ui input">
+            <input type="text" placeholder ="Search..." >
+          </div>
+        </div>
+      </div>
+        <br><br>
+    </nav>
+
+    <section class = "ui grid row">
+      <div class = "ui sixteen wide column">
+      <img = class "ui fluid image" src = "../imgs/new-york-city2.jpg" />
+      </div>
+    </section>
+
+
+    <div class ="ui grid container">
+      <div class ="ui horizontal divider"><i class ="asterisk icon"></i></div>
+        <div class = "ui twelve wide column container background-pale">
+          <section>
           <h3>Enumerable Methods - .map</h3>
-      <p>This week has been a pretty intense week for me. We started inplementing Ruby methods into our codes. These methods are such powerful tools that, if implemented correctly, they can solve a relatively complex problem with merely one line of code. That's probably one of the reasons that Ruby is a programming language praised by so many developers.</p>
+          <p>This week has been a pretty intense week for me. We started inplementing Ruby methods into our codes. These methods are such powerful tools that, if implemented correctly, they can solve a relatively complex problem with merely one line of code. That's probably one of the reasons that Ruby is a programming language praised by so many developers.</p>
 
-      <p>Enumerable module is a collection of methods in Ruby that provides searching, collecting, and sorting methods for classes that defined an instance method of each. All of the enumerable searching and filtering methods are iterators. To use them, one needs to provide a code block as their selection filter (see example below). Most of time, they return an array that contains the resulting values of their operations, regardless of whether the object being selected from or filtered is an array.</p>
+          <p>Enumerable module is a collection of methods in Ruby that provides searching, collecting, and sorting methods for classes that defined an instance method of each. All of the enumerable searching and filtering methods are iterators. To use them, one needs to provide a code block as their selection filter (see example below). Most of time, they return an array that contains the resulting values of their operations, regardless of whether the object being selected from or filtered is an array.</p>
 
-      <p>One of the most powerful methods available within the enumerable module is .map. Whenever .map is called, the return object is always going to be an array, which has the same size as the original enumerable. The values of the array could change depending on the accumulatd result of calling the code block on each element in the original object. It is important to note that .map returns a new object, therefore one can use it to return an array of modified values based on the operations specified in the code block. This is also what sets .map apart from .each because the each method returns its receiver, and the value returned by its code block each time through is discarded upon the completion of iteration. </p>
+          <p>One of the most powerful methods available within the enumerable module is .map. Whenever .map is called, the return object is always going to be an array, which has the same size as the original enumerable. The values of the array could change depending on the accumulatd result of calling the code block on each element in the original object. It is important to note that .map returns a new object, therefore one can use it to return an array of modified values based on the operations specified in the code block. This is also what sets .map apart from .each because the each method returns its receiver, and the value returned by its code block each time through is discarded upon the completion of iteration. </p>
 
-      <img src="imgs/map_method.png"/>
+          <img src="imgs/map_method.png"/>
 
-      <p>The example above shows that a method called my_array_modification_method is defined with two arguments- a source array and an integer called thing_to_modify. Within the method, I called on .map to iterate through the original source array. Using the code block, the if/else statement checks for whether each element is an integer. If so, value of the element is added by the integer value provided by variable thing_to_modify. The key thing here to note is that by using .map, the source array returned at the end of iteration is modified. However if .each is implemented in this example, the source returned at the end of iteration will be identical to the original source array. </p>
+          <p>The example above shows that a method called my_array_modification_method is defined with two arguments- a source array and an integer called thing_to_modify. Within the method, I called on .map to iterate through the original source array. Using the code block, the if/else statement checks for whether each element is an integer. If so, value of the element is added by the integer value provided by variable thing_to_modify. The key thing here to note is that by using .map, the source array returned at the end of iteration is modified. However if .each is implemented in this example, the source returned at the end of iteration will be identical to the original source array. </p>
+          <br>
         </section>
-      </main>
-
-      <footer>
-  <p>(c) 2015 Blog IronSight</p>
-</footer>
 
 
+          <br><br>
+        </div>
+        <div class ="ui four wide column">
+          <ul>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+          </ul>
+
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer class ="ui inverted segment">
+      <br><br>
+      <ul>
+        <a href="../index.html"><li class= "ui inverted basic button">Home</li></a>
+        <a href="../projects/index.html"><li class= "ui inverted basic button">Projects</li></a>
+        <a href="#"><li class= "ui inverted basic button">Travels</li></a>
+        <a href="mailto:aattsai@gmail.com"><li class= "ui inverted basic button"><i class ="ui icon mail"></i></li></a>
+        <a href="https://github.com/aattsai"><li class= "ui inverted basic black button"><i class ="ui icon github"></i></li></a>
+        <a href="https://www.linkedin.com/in/aattsai"><li class= "ui inverted basic blue button"><i class="ui icon linkedin"></i></li></a>
+        <a href="https://instagram.com/aatsai/"><li class= "ui inverted basic brown button"><i class="ui icon instagram"></i></li></a>
+      </ul>
+      <p><i class ="ui icon copyright"></i> 2015 Blog IronSight</p>
+    </footer>
   </body>
 </html>
+

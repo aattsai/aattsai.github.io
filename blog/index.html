@@ -1,98 +1,117 @@
 <!doctype html>
-<html class="no-js" lang="">
+
+<html>
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title></title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <link rel="stylesheet" href="../stylesheets/normalize.min.css">
-      <link rel="stylesheet" href="../stylesheets/trg.css">
-      <link rel="stylesheet" href="../stylesheets/main.css">
-
-      <!--[if lt IE 9]>
-          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-          <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-      <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css"/>
+    <script src="../semantic/dist/semantic.min.js"></script>
+    <title>Blog IronSight</title>
   </head>
-  <body class = "bgc-comp">
-      <!--[if lt IE 8]>
-          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-      <div class="debug">
-        <header class="debug width-full row gutters-t gutters-d txtc-pale bgc-black header-ht-medium fixed_pos z-index-top txt-center">
-          <nav>
-            <a href="../index.html">About</a>
-            <a href="git.html">Post 1</a>
-            <a href="css-concepts.html">Post 2</a>
-            <a href="arrays-hashes.html">Post 3</a>
-            <a href="enumerable-methods.html">Post 4</a>
-            <a href="ruby-classes.html">Post 5</a>
-            <a href="JavaScript.html">Post 6</a>
-            <a href="tech.html">Post 7</a>
-  </nav>
-        </header>
-      </div>
-      <div class="debug p-sm txtc-pale fz-xxl txt-center top-m z-index-bottom bgc-swiss">
-      </div>
 
-      <main role="main" class="container row gutters-t gutters-d bgc-pale p-xs debug top-m ">
-        <section>
+  <body>
+    <nav class ="ui top fixed inverted menu">
+      <span class="header item">Aaron Tsai</span>
+      <a href="../index.html" class ="item">HOME</a>
+      <a href="../projects/index.html" class ="item ui">PROJECTS</a>
+      <a href="#" class ="item">TRAVELS</a>
+
+      <div class="right menu">
+        <div class="item">
+          <div class="ui input">
+            <input type="text" placeholder ="Search..." >
+          </div>
+        </div>
+      </div>
+        <br><br>
+    </nav>
+
+    <section class = "ui grid row">
+      <div class = "ui sixteen wide column">
+      <img = class "ui fluid image" src = "../imgs/new-york-city2.jpg" />
+      </div>
+    </section>
+
+
+    <div class ="ui grid container">
+      <div class ="ui horizontal divider"><i class ="asterisk icon"></i></div>
+        <div class = "ui ten wide column container background-pale">
+          <section>
           <h3>Introduction to Git and GitHub</h3>
           <p>Before I started coding, I've always wondered what sets developers and recreational computer users apart. After all, almost all people today use computers excessively, not just developers. A shallow, but legimate observation is how much developers rely the Command Line to navigate around files while typical computer users rely on the graphical interface created by professional programmers...</p>
           <a href="git.html">Continue reading</a>
+          <br><br>
         </section>
 
         <secion>
           <h3>CSS Concepts - Border, Margin, and Padding</h3>
           <p>Time flies, this is already the end of week three for our phase 0 portion at Dev Bootcamp. It also means I have officially moved to New York City for three weeks as of tomorrow. What an amazing three weeks it has been! After two weeks of attempting to master the basic concepts behind html and css, I would like to write up a little bit of what I've learned about basic CSS concepts.</p>
           <a href="css-concepts.html">Continue reading</a>
+          <br><br>
         </section>
 
         <section>
           <h3>Introduction to Array and Hash</h3>
           <p>This is week 4 at Dev Bootcamp and we are finally learning (or re-learning) Ruby! We were assigned with many challenges this week, but fortunately because most (all) of us have prior exposure to Ruby, the challenges were relatively easy. In this week's blog I would like to introduce the concepts of array and hash. </p>
           <a href="arrays-hashes.html">Continue reading</a>
+          <br><br>
         </section>
 
         <section>
           <h3>Enumerable Methods - .map</h3>
           <p>This week has been a pretty intense week for me. We started inplementing Ruby methods into our codes. These methods are such powerful tools that, if implemented correctly, they can solve a relatively complex problem with merely one line of code. That's probably one of the reasons that Ruby is a programming language praised by so many developers.</p>
           <a href="enumerable-methods.html">Continue reading</a>
+          <br><br>
         </section>
 
         <section>
           <h3>Ruby Classes</h3>
           <p>As a Ruby beginner, you must hear the phrase "Ruby is an object-oriented language" way too often. In object-oriented langauge such as Ruby, a class is the blueprint from which objects are created. A class can define the characteristics of an object, or it can define a combination of functions to an object. For example Countries is a class, and the United States is an instance of the class of objects known as Countries. Within the class Countries, various characteristics can be defined, such as population, political system, economic system and so on based.</p>
           <a href="ruby-classes.html">Continue reading</a>
+          <br><br>
         </section>
 
         <section>
           <h3>JavaScript vs. Ruby - Hashes and Objects</h3>
           <p>After 4 weeks of intensive Ruby challenges, this week we are finally diving into the world of JavaScript. Programmers I speak to often have mixed feelings about JavaScript. I often hear high praises about the language, but other times, I hear people expressing clear feeling of frustration towards it. One of the very first things I learned this week was that JavaScript, unlike its name may suggest, has essentially no connection with Java. However, after a few hours of JavaScript, I actually feel there are some resemblances between JavaScript and Java, perhaps just from a purely syntactic perspective.</p>
           <a href="JavaScript.html">Continue reading</a>
+          <br><br>
         </section>
         <section>
           <h3>Introduction to Recursion</h3>
           <p>We have covered a wide array of concepts in the past eight weeks of phase 0. There is, however, a couple of interesting topics we have yet to cover. This week, I plan to introduce the concept of recursion, as it is one of the topics I have always wanted to implement to some of my prior programs. The concept of recursion is simple, a function that calls itself within the function to get the job done. Recursion offers an additional way to define an infinite set of numbers other than iterative methods such as loops.</p>
           <a href="tech.html">Continue reading</a>
+          <br><br>
+        </div>
+        <div class ="ui six wide column">
+          <ul>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+            <li>a blog post</li>
+          </ul>
 
-      </main>
+        </div>
+    </div>
 
-      <footer>
-  <p>(c) 2015 Blog IronSight</p>
-</footer>
-
+    <br><br><br><br>
 
 
-
-
-
-
-
-
+    <footer class ="ui inverted segment">
+      <br><br>
+      <ul>
+        <a href="../index.html"><li class= "ui inverted basic button">Home</li></a>
+        <a href="../projects/index.html"><li class= "ui inverted basic button">Projects</li></a>
+        <a href="#"><li class= "ui inverted basic button">Travels</li></a>
+        <a href="mailto:aattsai@gmail.com"><li class= "ui inverted basic button"><i class ="ui icon mail"></i></li></a>
+        <a href="https://github.com/aattsai"><li class= "ui inverted basic black button"><i class ="ui icon github"></i></li></a>
+        <a href="https://www.linkedin.com/in/aattsai"><li class= "ui inverted basic blue button"><i class="ui icon linkedin"></i></li></a>
+        <a href="https://instagram.com/aatsai/"><li class= "ui inverted basic brown button"><i class="ui icon instagram"></i></li></a>
+      </ul>
+      <p><i class ="ui icon copyright"></i> 2015 Blog IronSight</p>
+    </footer>
   </body>
 </html>
-
 
