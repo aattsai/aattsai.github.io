@@ -3,60 +3,56 @@
 <html>
   <head>
     <!-- <link type="text/css" rel="stylesheet" href="stylesheets/default.css"/> -->
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css"/>
+    <script src="semantic/dist/semantic.min.js"></script>
     <title>IronSight Homepage</title>
   </head>
 
   <body>
-    <nav class ="ui menu">
-        <a href="about.html" class="header item">Aaron Tsai&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="projects/index.html" class ="item ui">PROJECTS&nbsp;&nbsp;&nbsp;</a>
-        <a href="#" class ="item">TRAVELS&nbsp;&nbsp;&nbsp;</a>
-        <a href="blog/index.html" class ="item">BLOG&nbsp;&nbsp;&nbsp;</a>
-        <a href="contact.html" class ="item">CONTACT&nbsp;&nbsp;&nbsp;</a>
+    <nav class ="ui top fixed inverted menu">
+      <span class="header item">Aaron Tsai</span>
+      <a href="projects/index.html" class ="item ui">PROJECTS</a>
+      <a href="#" class ="item">TRAVELS</a>
+      <a href="blog/index.html" class ="item">BLOG</a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui input">
+            <input type="text" placeholder ="Search..." >
+          </div>
+        </div>
+      </div>
         <br><br>
     </nav>
 
-    <section class ="ui two column grid">
+    <section class = "ui grid row">
+      <div class = "ui sixteen wide column main-focus">
+      </div>
+    </section>
 
-      <div class = "ui column message">
+
+    <div class ="ui grid container">
       <div class ="ui horizontal divider"><i class ="cocktail icon"></i></div>
-        <p>I met this 48yo Colombian man who was celebrating the completion of his 12-step at ca. He showed me his artwork, and I was stunned by the abstraction and how unsettling it made me feel.
-      </p>
-      <p>He asked me to comment, I told him that it makes me feel disturbed. He slammed on the bar counter and laughed "so I am an artist after all. You see, its not about the bullshit answer like 'oh yeah its good' or trying to analyze it, you can't analyze art. Its about the reaction, you felt disturbed by my art, it moved you on the inside, I moved you, a stranger just touched your world."
-      </p>
-      <p>When asked about his decision to not sell his artworks, he said "I tried once at a bar in Astoria 13 years ago. I asked every buyer why they wanted my painting. One couple said the color really goes with our couch. I raged and told them to get the f*** outta here, my pain and suffering goes with your couch? I returned all the proceeds to the bar owner and asked her to comp drinks that night until everyone gets wasted, then use the rest to get me breakfast." He left this self-portrait on a receipt before leaving the bar.
-      </p>
-      </div>
-      <div class = "ui column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      </div>
-    </section>
-    <section>
-      <br><br><br><br><br>
-      <img class="sublime" src="imgs/sublime_main.jpg" alt = "design" />
-      <img class="journey" src="imgs/journey.jpg" alt = "journey" />
+      <br><br><br>
+        <div class = "ui ten wide column container background-pale">
+          <p>I met this 48yo Colombian man who was celebrating the completion of his 12-step at ca. He showed me his artwork, and I was stunned by the abstraction and how unsettling it made me feel.</p>
+          <p>He asked me to comment, I told him that it makes me feel disturbed. He slammed on the bar counter and laughed "so I am an artist after all. You see, its not about the bullshit answer like 'oh yeah its good' or trying to analyze it, you can't analyze art. Its about the reaction, you felt disturbed by my art, it moved you on the inside, I moved you, a stranger just touched your world."</p>
+          <p>When asked about his decision to not sell his artworks, he said "I tried once at a bar in Astoria 13 years ago. I asked every buyer why they wanted my painting. One couple said the color really goes with our couch. I raged and told them to get the f*** outta here, my pain and suffering goes with your couch? I returned all the proceeds to the bar owner and asked her to comp drinks that night until everyone gets wasted, then use the rest to get me breakfast." He left this self-portrait on a receipt before leaving the bar.</p>
+        </div>
+        <div class ="ui six wide column"><img class="ui container" src="imgs/sublime_main.jpg" alt = "design" /></div>
+    </div>
 
-    </section>
 
     <footer>
-      <ul>
-        <li class= "ui button"><a href="#">About Me</a></li>
-        <li class= "ui button"><a href="#">Design Project</a></li>
-        <li class= "ui button"> <a href="#">Publication</a></li>
-        <li class= "ui button"><a href="#">Travels</a></li>
-        <li class= "ui button"><a href="blog/index.html">blog</a></li>
-        <li class= "ui button"><a href="mailto:aattsai@gmail.com"><i class ="ui icon mail"></i></a></li>
-        <li class= "ui button"><a href="https://www.linkedin.com/in/aattsai"><i class="ui icon linkedin"></i></a></li>
+      <br><br><br><br>
+      <ul class = "ui inverted segment">
+        <a href="projects/index.html"><li class= "ui inverted basic button">Projects</li></a>
+        <a href="#"><li class= "ui inverted basic button">Travels</li></a>
+        <a href="blog/index.html"><li class= "ui inverted basic button">Blog</li></a>
+        <a href="mailto:aattsai@gmail.com"><li class= "ui inverted basic button"><i class ="ui icon mail"></i></li></a>
+        <a href="https://www.linkedin.com/in/aattsai"><li class= "ui inverted basic blue button"><i class="ui icon linkedin"></i></li></a>
+        <a href="https://instagram.com/aatsai/"><li class= "ui inverted basic brown button"><i class="ui icon instagram"></i></li></a>
       </ul>
-      <p></p>
     </footer>
   </body>
 </html>

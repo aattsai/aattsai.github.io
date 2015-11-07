@@ -1,0 +1,16 @@
+body {
+  background-color: #c3c4c6;
+}
+
+
+.main-focus {
+  height: 53em;
+  margin:0;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.background-pale {
+  background-color: #ebebec;
+}
