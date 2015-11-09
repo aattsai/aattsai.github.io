@@ -4,7 +4,7 @@ body {
 
 
 .main-focus {
-  height: 55em;
+  height: 56em;
   margin:0;
   background-color: black;
   text-align: center;
@@ -25,4 +25,17 @@ body {
   position: absolute;
   top: 23em;
   right: 4em;
+}
+
+.medium-font {
+  font-size: 1.2em;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 35em;
+}
+
+.text-justify {
+  text-align: justify;
 }
