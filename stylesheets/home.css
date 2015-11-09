@@ -4,13 +4,25 @@ body {
 
 
 .main-focus {
-  height: 53em;
+  height: 55em;
   margin:0;
   background-color: black;
   text-align: center;
   color: white;
 }
 
+.main-icon {
+  position: absolute;
+  top: 8.5em;
+  right: 40.5%;
+}
+
 .background-pale {
   background-color: #ebebec;
+}
+
+.sub-title {
+  position: absolute;
+  top: 23em;
+  right: 4em;
 }
